@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 1</title>
+        <style type="text/css">
+            body{
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container{
+                width: 500px;
+                background: #f4f4f4;
+            }
+            .div1{
+                width: 250px;
+                height: 100px;
+                background: linear-gradient(black,silver);
+                border: 1px solid black;
+                box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+
+                padding: 10px;
+
+                position: relative;
+
+                perspective: 600px;
+
+                margin: auto;
+            }
+            .div2{
+                width: 200px;
+                height: 100px;
+                background: linear-gradient(black,silver);
+                border: 1px solid black;
+                box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+
+                padding: 50px;
+
+                position: absolute;
+                top: -100%;
+                left: -15px;
+                z-index: 1;
+
+                transform: rotateX(45deg);
+            }
+            .div3{
+                width: 50px;
+                height: 100%;
+                background-color: #f4f4f4;
+                border: 1px solid black;
+                box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+
+                position: absolute;
+                left: 85px;
+                top: 0;
+
+                transform-origin: left;
+
+                transition: all 0.5s;
+            }
+            .div3:hover{
+                transform: rotateY(-45deg);
+            }
+            .div4{
+                width: 50px;
+                height: 100%;
+                background-color: #f4f4f4;
+                border: 1px solid black;
+                box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+
+                position: absolute;
+                left: 50%;
+                top: 0;
+
+                transform: rotateY(45deg);
+                transform-origin: right;
+
+                transition: all 0.5s;
+            }
+            .div4:hover{
+                transform: rotateY(0);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="div1">DIV 1
+                <div class="div2">DIV 2</div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
