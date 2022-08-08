@@ -1,0 +1,18 @@
+CSS
+box-shadow : inset h v b c;
+white-space : no-wrap;
+
+-webkit-text-stroke: 1px;
+-webkit-text-stroke-color: #fff;
+
+/* the root element's font-size */
+                            /* 1rem = 16px */
+font-size : 1rem;
+
+display: grid;
+place-items: center;  /*for element center*/
+
+content: attr(title);
+
+-webkit-background-clip: text;
+	
